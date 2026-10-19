@@ -1,0 +1,135 @@
+# ==============================================================================
+# Production .gitignore for Deepfake Detection Project
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Virtual Environments
+# ------------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# 2. Datasets & Raw / Processed Media
+# ------------------------------------------------------------------------------
+dataset/
+datasets/
+data/
+raw_data/
+processed_data/
+temp/
+tmp/
+uploads/
+extracted_frames/
+extracted_faces/
+extracted_audio/
+
+# ------------------------------------------------------------------------------
+# 3. Model Weights, Checkpoints & Pretrained Artifacts (>100MB / Heavy Files)
+# ------------------------------------------------------------------------------
+*.h5
+*.hdf5
+deepfake_model.h5
+*.pth
+*.pt
+*.onnx
+*.tflite
+*.ckpt
+*.pb
+*.bin
+*.weights
+*.pkl
+*.pickle
+checkpoints/
+models/*.h5
+models/*.pth
+models/*.pt
+models/*.onnx
+
+# ------------------------------------------------------------------------------
+# 4. Python Bytecode & Compilation Cache
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------------------------------------------------------
+# 5. IDEs, Editors & Project Settings
+# ------------------------------------------------------------------------------
+.vscode/
+*.code-workspace
+.idea/
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.spyproject
+.ropeproject
+
+# ------------------------------------------------------------------------------
+# 6. Operating System Specific Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.directory
+
+# ------------------------------------------------------------------------------
+# 7. Environment Variables, Secrets & Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.cert
+secrets.json
+
+# ------------------------------------------------------------------------------
+# 8. Logs, Profiling & Jupyter Notebook Checkpoints
+# ------------------------------------------------------------------------------
+*.log
+logs/
+runs/
+tensorboard/
+.ipynb_checkpoints/
+*-checkpoint.ipynb
